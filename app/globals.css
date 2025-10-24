@@ -1,29 +1,18 @@
-/* Import the compiled Tailwind bundle to avoid Turbopack PostCSS processing issues */
-@import "tailwindcss/tailwind.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --bg: #ffffff;
-  --fg: #111827;
-  --muted: #6b7280;
-  --brand: #4f46e5;
+.sidebar {
+  transition: transform 0.3s ease;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0b1220;
-    --fg: #e6eef8;
-    --muted: #9ca3af;
-    --brand: #6366f1;
-  }
+.sidebar-hidden {
+  transform: translateX(-100%);
+}
+.sidebar {
+  transition: transform 0.3s ease;
 }
 
-body {
-  background-color: var(--bg);
-  color: var(--fg);
+.sidebar-hidden {
+  transform: translateX(-100%);
 }
-
-/* small base styles for non-Tailwind-aware parts */
-.muted {
-  color: var(--muted);
-}
-
