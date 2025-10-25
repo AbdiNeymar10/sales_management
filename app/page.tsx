@@ -1,10 +1,7 @@
 
+import { redirect } from "next/navigation";
+                                                                                                                                                                               
 export default function Home() {
-  return (
-    <div>
-    <h1>Sales Management System</h1>
-    </div>
-  )
-   
-
-}
+  // Redirect root to the login page so users see the login first
+  redirect("/login");
+}                                  
