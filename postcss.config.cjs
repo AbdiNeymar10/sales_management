@@ -7,6 +7,6 @@ module.exports = {
       },
     },
     autoprefixer: {},
-    '@tailwindcss/postcss': {},
+    tailwindcss: {},
   },
 };
