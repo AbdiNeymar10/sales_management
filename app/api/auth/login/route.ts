@@ -3,7 +3,6 @@ import { NextResponse } from "next/server";
 // This mirrors the users store from signup route. In a real app you'd query a DB.
 const users = (globalThis as any).__sales_users__ as any[] | undefined;
 
-// If the shared global isn't set, create a minimal fallback store. This is only
 // for dev/testing inside the same Node instance.
 if (!users) {
   (globalThis as any).__sales_users__ = [];
