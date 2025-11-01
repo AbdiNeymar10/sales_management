@@ -43,8 +43,6 @@ export default function SignupPage() {
         setLoading(false);
         return;
       }
-
-      // on success, navigate to login
       router.push("/login");
     } catch (err) {
       setError("Network error");
