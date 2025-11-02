@@ -34,8 +34,6 @@ export default function LoginPage() {
         setLoading(false);
         return;
       }
-
-      // For now just redirect to home
       router.push("/");
     } catch (err) {
       setError("Network error");
