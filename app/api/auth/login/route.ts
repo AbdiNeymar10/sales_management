@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
 
-// This mirrors the users store from signup route. In a real app you'd query a DB.
 const users = (globalThis as any).__sales_users__ as any[] | undefined;
 
 // for dev/testing inside the same Node instance.
