@@ -65,7 +65,7 @@ export default function SignupPage() {
 
           <Button type="submit" className="w-full">{loading ? "Signing up..." : "Create account"}</Button>
         </form>
-
+        // login if u have an account
         <p className="mt-4 text-sm muted">
           Already have an account? <Link href="/login" className="text-indigo-600">Log in</Link>
         </p>
