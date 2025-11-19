@@ -22,6 +22,7 @@ export default function LoginPage() {
       return;
     }
     setLoading(true);
+    // post info to the database
     try {
       const res = await fetch("/api/auth/login", {
         method: "POST",
